@@ -118,11 +118,11 @@ def success():
         
         dff = pd.DataFrame({"Audio":filenamee, "text":greetings, "Result":greeting_word})
         dff.index= dff.index+1
-        from pandas import ExcelWriter
+        #from pandas import ExcelWriter
 
-        writer = ExcelWriter(APP_ROOT+'\\media\\final.xlsx')
-        dff.to_excel(writer,'Sheet5')
-        writer.save()
+        #writer = ExcelWriter(APP_ROOT+'\\media\\final.xlsx')
+        #dff.to_excel(writer,'Sheet5')
+        #writer.save()
 
 
         return render_template("success.html", tables=[dff.to_html(classes='data')], titles=dff.columns.values)
