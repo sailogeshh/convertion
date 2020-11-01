@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+<style>
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body  {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Yk2r1eK0JCTQRyivJ3gEqFONZJ3TMhEb0VHNp8HJpcZFYUrQeQ');
+  height: 100%;
+  background-size: 1430px 800px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+</style>
+
+</head>
+<body>
+<center><h1>Voice Detection</h1></center>
+{% for table in tables %}
+            <!--{{titles[loop.index]}}-->
+            {{  table|safe  }}
+{% endfor %}
+<!--<p>{{ path }}<p>-->
+<!--<button class="btn"><i class="fa fa-download"></i> Download</button>-->
+</body>
+</html>

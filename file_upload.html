@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="logo-row">
+            <img src="https://seaportai.com/wp-content/uploads/2018/07/logo.png" alt="logo" class="logo" style="width:200px;height:200px;margin: 0 auto;">
+            </div>
+        <title>Audio to Text Conversion</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+function getfolder(e) {
+    var files = e.target.files;
+    var path = files[0].webkitRelativePath;
+    var Folder = path.split("/");
+    alert(Folder[0]);
+}
+</script>
+
+<style>
+body  {
+background-image: url('https://image.freepik.com/free-photo/vintage-wallpaper-background_53876-25244.jpg');
+height: 100%;
+background-size: 1430px 800px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+
+}
+.logo-row {
+    width: 250px;
+    margin: 0 auto;
+}
+.col-sm-12{ text-align: center; }
+</style>
+
+    </head>
+
+    <!--<body>
+      <form action="/success" method="POST">
+        <center><h1><b>Image Shape Detection</b></h1><br><br></center>
+    <center><input name="text"></center>
+    <center><input type="submit"></center>
+</form>
+</body>
+</html>-->
+
+
+    <body>
+        <br><br><br>
+        <div class="box">
+            <form action="/success" method="POST" enctype="multipart/form-data" class="text-center">
+                    <div class="col-sm-12">
+                        <h1><b>Voice to Text Conversion</b></h1><br><br>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="control-fileupload">
+                            <label for="file1" class="text-left">Select a file: </label>
+                            <!--<input type="file" name="datafile" id="ctrl" webkitdirectory directory multiple/>
+                            <input type="file" name="datafile[]" id="flup" onchange="getfolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+                            <p>Directory: <input type="file" name="datafile[]" webkitdirectory mozdirectory /></p>
+                            <input type="text" name="datafile[]"><br>-->
+                            <input type="file" name="datafile[]" size="40"  multiple="">
+
+
+
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-primary">Reset</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>
